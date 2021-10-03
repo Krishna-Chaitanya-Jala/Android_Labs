@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/versionLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:stretchColumns="1">
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TableRow android:padding="5dp"-->
+<!--        android:background="#393B6C">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="395dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Android Versions"-->
+<!--            android:textSize="30sp"-->
+<!--            android:layout_span="2"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/teal_700"-->
+<!--            >-->
+
+<!--        </TextView>-->
+<!--    </TableRow>-->
+
+    <TableRow>
+        <EditText
+            android:id="@+id/androidVersion"
+            android:layout_height="wrap_content"
+            android:hint="Enter Android Version">
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/codeName"
+            android:layout_height="wrap_content"
+            android:hint="Enter Android Code name">
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/addVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:background="#393B6C"
+            android:gravity="center"
+            android:text="Add Version"></Button>
+    </TableRow>
+
+    <TableRow android:padding="5dp">
+        <TextView android:layout_height="wrap_content"
+            android:text="@string/Version"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#859C9C">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="@string/Code_name"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#859C9C">
+        </TextView>
+    </TableRow>
+
+    <TableRow android:padding="5dp">
+        <TextView android:layout_height="wrap_content"
+            android:text="Android 9.0"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#859C9C">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Pie"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#859C9C">
+        </TextView>
+    </TableRow>
+
+    <TableRow android:padding="5dp">
+        <TextView android:layout_height="wrap_content"
+            android:text="Android 8.0"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#859C9C">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Oreo"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#859C9C">
+        </TextView>
+    </TableRow>
+
+
+
+</TableLayout>
