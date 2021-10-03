@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="227dp"
+        android:layout_height="74dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="32dp"
+        android:src="@drawable/walmart"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:text="Sign in to your account"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166"
+        android:layout_gravity="center" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="40dp">
+
+    </Space>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email address(required)"
+        android:textSize="11sp"
+        android:layout_marginLeft="50sp">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:hint="Email_address"
+        android:textSize="15sp"
+        android:inputType="textEmailAddress">
+
+    </EditText>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp">
+
+    </Space>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password(required)"
+        android:textSize="11sp"
+        android:layout_marginLeft="50sp">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:hint="Password"
+        android:textSize="15sp"
+        android:inputType="textPassword">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgetpassword"
+        android:textColor="@color/black"
+        android:layout_marginLeft="200dp"
+        android:textSize="10sp"
+        android:clickable="true"
+        android:linksClickable="true"
+        >
+    </TextView>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:background="#37556C"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center">
+    </Button>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="-------Don't have an Account?------"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:autoLink="all"
+        android:layout_marginTop="15dp">
+    </TextView>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Create a new account"
+        android:textAllCaps="false"
+        android:background="#37556C"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        >
+    </Button>
+</LinearLayout>
