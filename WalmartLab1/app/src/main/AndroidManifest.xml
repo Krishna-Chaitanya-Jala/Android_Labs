@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WalmartLab1">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ShoppingActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
